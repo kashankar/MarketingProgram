@@ -1,0 +1,4 @@
+companyID: 2
+companyName: Google
+companyRequirements: (customerEmail contains "gmail") || (customerID >= 2)
+companyDescription: Services for AI research

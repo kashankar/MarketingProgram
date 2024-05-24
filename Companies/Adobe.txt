@@ -1,0 +1,4 @@
+companyID: 1
+companyName: Adobe
+companyRequirements: (customerName contains sha) && (customerID < 4)
+companyDescription: Products for creative users and businesses
