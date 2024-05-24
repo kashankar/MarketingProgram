@@ -62,17 +62,4 @@ public class pgJDBCConnector {
                 customer.getCustomerDescription() + "')";
         executeStatement(statement);
     }
-
-    public void runQuery(String query) {
-        try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(query);
-
-            resultSet.close();
-            statement.close();
-        } catch (SQLException e) {
-            System.out.println("Failed to run query: " + query);
-            System.out.println("Exception: " + e);
-        }
-    }
 }
