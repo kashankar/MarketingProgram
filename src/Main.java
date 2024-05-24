@@ -32,7 +32,7 @@ public class Main {
             for (File companyFile: companyFiles) {
                 reader.setFilePath(companyFile.getPath());
                 Company company = converter.readerToCompany(reader, delimiter);
-                // Check company
+                // Show company
                 System.out.println(company.getCompanyName() + " - " + company.getCompanyRequirements());
                 connector.addCompany(company);
                 companies.add(company);
